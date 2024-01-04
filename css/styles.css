@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #24abe1;
+}
+
+#container {
+  max-width: 1000px;
+  margin: 300px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculadora {
+  background-color: #1f1f1f;
+  width: 450px;
+  padding: 20px;
+}
+
+.display {
+  font-size: 2.5em;
+  text-align: end;
+  padding: 10px;
+  border: 2px solid goldenrod;
+  margin-bottom: 15px;
+  color: #fff;
+  overflow-x: auto;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.buttons button {
+  cursor: pointer;
+  width: 25%;
+  height: 55px;
+  font-size: 2em;
+  border: 2px solid #1f1f1f;
+  transition: .2s;
+}
+
+.buttons button.btnOperacao {
+  background-color: goldenrod;
+}
+
+.buttons button.btnLimpar {
+  width: calc(25% * 3);
+}
+
+.buttons button.btnZero {
+  width: calc(25% * 2);
+}
+
+.buttons button:active {
+  transform: scale(.9);
+}
